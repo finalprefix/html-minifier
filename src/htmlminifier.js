@@ -10,15 +10,7 @@
 (function(global){
   
   var log;
-  if (global.console && global.console.log) {
-    log = function(message) {
-      // "preserving" `this`
-      global.console.log(message);
-    };
-  }
-  else {
-    log = function(){ };
-  }
+  log = console.log;
   
   function trimWhitespace(str) {
     return str.replace(/^\s+/, '').replace(/\s+$/, '');
