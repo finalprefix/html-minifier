@@ -317,7 +317,7 @@
     
     results.push.apply(results, buffer)    
     var str = results.join('');
-    log('minified in: ' + (new Date() - t) + 'ms');
+    
     return str;
   }
   
